@@ -1,3 +1,4 @@
+set nocompatible
 filetype plugin indent on
 set number
 "Para salir con :Q :q"
