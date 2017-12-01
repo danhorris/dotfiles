@@ -1,0 +1,17 @@
+set nocompatible
+execute pathogen#infect()
+syntax enable
+filetype plugin indent on
+set number
+set cursorline
+set hlsearch
+set noshowmode
+
+set path+=**
+set wildmenu
+
+"Para salir con :Q :q"
+:command Q q
+
+"solarized"
+set background=dark
