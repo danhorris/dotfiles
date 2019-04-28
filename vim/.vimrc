@@ -1,9 +1,20 @@
 set nocompatible
+syntax enable
 filetype plugin indent on
 set number
+set cursorline
+set hlsearch
+set noshowmode
+
+set path+=**
+set wildmenu
+
 "Para salir con :Q :q"
 :command Q q
-"para que se vea igual en tmux"
+
 set background=dark
-set hlsearch 
-set incsearch
+"netrw
+let g:netrw_banner=0
+let g:netrw_list_hide = '\(^\|\s\s\)\zs\.\S\+,\(^\|\s\s\)ntuser\.\S\+'
+autocmd FileType netrw set nolist
+
