@@ -6,9 +6,9 @@ export ZSH=/home/dhorri/.oh-my-zsh
 export no_proxy="*.mecon.gov.ar,*.mecon.ar"
 #export http_proxy="http://vip-proxy-srv-ka.mecon.ar:8080"
 export http_proxy="http://proxypool1.mecon.ar:8080"
-export https_proxy="https://proxypool1.mecon.ar:8080"
+export https_proxy="http://proxypool1.mecon.ar:8080"
 export HTTP_PROXY="http://proxypool1.mecon.ar:8080"
-export HTTPS_PROXY="https://proxypool1.mecon.ar:8080"
+export HTTPS_PROXY="http://proxypool1.mecon.ar:8080"
 
 
 # Set name of the theme to load. Optionally, if you set this to "random"
@@ -91,10 +91,16 @@ export LANG=en_US.UTF-8
 #
 # Example aliases
 alias zshconfig="vim ~/.zshrc"
+alias zshreload="source ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias tmc='tmux -2'
 alias gitrepos='cd /c/Works/gitRepositories/'
 alias desktop= 'cd /c/Users/dhorri/Desktop/'
 alias kn='taskkill /f /im node.exe'
 alias gesus_version_prod='curl --noproxy "'"*"'" -s https://apps.dgsiaf.mecon.gov.ar/gesus/actuator/info | jq .build.version'
+alias folder_log='cd /c/eSidif/Tools/logs/'
 
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/dhorri/.sdkman"
+[[ -s "/home/dhorri/.sdkman/bin/sdkman-init.sh" ]] && source "/home/dhorri/.sdkman/bin/sdkman-init.sh"
